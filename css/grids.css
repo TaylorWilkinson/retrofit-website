@@ -1,0 +1,376 @@
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid-row::after {
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+	text-align: left;
+	margin: 0;
+	display: inline-block;
+}
+
+/*Divider Row*/
+.divider-col-1of1 {
+	margin: 0em;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	float: left;
+	width: 100%;
+}
+
+.nav-col-1of4 {
+	margin: 0;
+	margin-left: 0rem;
+	float: left;
+	text-align: left;
+	display: inline-block;
+}
+.nav-col-2of4 {
+	float: left;
+}
+.nav-col-3of4 {
+	float: left;
+}
+.nav-col-4of4 {
+	float: left;
+}
+
+/*Main Page - Incentives Infographic Columns*/
+.subpage-intro-col-1of2 {
+	margin: 0;
+	margin-left: 15%;
+	float: left;
+}
+.section-intro-col-1of2 {
+	margin: 0;
+	margin-left: 15%;
+	float: left;
+	width: 50%;
+}
+
+.section-intro-col-2of2 {
+	margin: 0;
+	float: left;
+	width: 45%;
+}
+
+.intro-col-1of2 {
+	margin: 0;
+	float: left;
+	width: 50%;
+}
+
+.intro-col-2of2 {
+	margin: 0;
+	float: left;
+	width: 45%;
+}
+
+/**/
+.retrofit-col-1of2 {
+	margin: 0;
+	float: left;
+	width: 50%;
+}
+.retrofit-col-2of2 {
+	margin: 0;
+	float: left;
+	width: 50%;
+}
+
+.grid-col-1of2 {
+	margin: 0;
+	float: left;
+	width: 50%;
+}
+.grid-col-2of2 {
+	margin: 0;
+	float: left;
+	width: 50%;
+}
+
+/*Consider These Factors*/
+.grid-col-1of1 {
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+
+/*Information Tags*/
+.grid-col-1of3 {
+	width: 31%;
+	height:20em;
+}
+
+.grid-col-2of3 {
+	float: left;
+	width: 31%;	
+	height: 20em;
+}
+
+.grid-col-3of3 {
+	float: left;
+	width: 31%;
+	height: 20em;
+}
+
+/*id's for secondary navigations on main and cost secondary navigations, for bottom margin in
+3-column grids*/
+#main-nav {
+	margin-bottom: 2em;
+}
+
+#cost-nav {
+	margin-bottom: 5em
+}
+
+.subpage-grid-col-1of1 {
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+
+.subpage-grid-col-1of2 {
+	float: left;
+	width: 45%;	
+	height:20em;
+	margin-top:1em;
+	margin-bottom: 2em;
+}
+
+.subpage-grid-col-2of2 {
+	float: left;
+	width: 45%;
+	margin-top:1em;
+	height:20em;
+	margin-bottom:2em;
+	/*margin-left: 3.3em;*/
+	/*margin-right:3em;*/
+}
+
+.grid-row {
+	width: 100%;
+}
+
+
+/*@MEDIA RESPONSIVE CODE*/
+
+/*NAV BAR*/
+
+/*for smaller window and Nexus 6*/
+@media (max-width: 700px) {
+	.nav-col-1of4 {
+		width: 100%;
+	}
+	.nav-col-2of4 {
+		width: 33.333%;
+		margin: 0;
+	}
+	.nav-col-3of4 {
+		width: 33.333%;
+		margin: 0;
+	}
+	.nav-col-4of4 {
+		width: 33.333%;
+		margin: 0;
+	}	
+}
+
+/*for iPhone 5*/
+@media (max-width: 400px) {
+	.nav-col-2of4 {
+		width: 100%;
+		margin: 0;
+	}
+	.nav-col-3of4 {
+		width: 100%;
+		margin: 0;
+	}
+	.nav-col-4of4 {
+		width: 100%;
+		margin: 0;
+	}	
+}
+
+/*INCENTIVES PAGE*/
+/*header columns*/
+@media (max-width: 1010px) {
+	/*cost main page*/
+	.intro-col-1of2 {
+		width: 100%;
+	}
+	.intro-col-2of2 {
+		width: 100%;
+	}
+	/*sub pages*/
+	.section-intro-col-1of2 {
+		width: 100%;
+	}
+	.section-intro-col-2of2 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 750px) {
+	.retrofit-col-1of2 {
+		width: 100%;
+	}
+	.retrofit-col-2of2 {
+		width:100%;
+	}
+}
+
+/*Top Banner Incentives Page*/
+@media (max-width: 1120px) {
+	.subpage-grid-col-1of1 {
+		width: 50%;
+	}
+	.info-col-1of1 {
+		float: left;
+		width: 50%;
+	}
+	.subpage-header-text {
+		padding-left: 0;
+	}
+}
+/*Page Goes Back To Centered Alignment*/
+@media (max-width: 700px) {
+	.subpage-grid-col-1of1 {
+		width: 100%;
+	}
+	.info-col-1of1 {
+		float: left;
+		width: 100%;
+	}
+	.subpage-header-text {
+		padding-left: 0;
+		text-align: center;
+	}
+}
+
+
+/*Incentives Infographic Columns*/
+@media (max-width: 1120px) {
+	.subpage-intro-col-1of2 {
+		margin: 0;
+		margin-left: 40%;
+		float: left;
+		width: 100%;
+	}
+	.section-intro-col-1of2 {
+		margin: 0;
+		margin-left: 40%;
+		float: left;
+		width: 100%;
+	}
+	.section-intro-col-2of2 {
+		margin: 0;
+		margin-left: 14%;
+		float: left;
+		width: 100%;
+	}
+}
+@media (max-width: 850px) {
+	.subpage-intro-col-1of2 {
+		margin: 0;
+		margin-left: 35%;
+		float: left;
+		width: 100%;
+	}
+	.section-intro-col-1of2 {
+		margin: 0;
+		margin-left: 35%;
+		float: left;
+		width: 100%;
+	}
+	.section-intro-col-2of2 {
+		margin: 0;
+		margin-left: 11%;
+		float: left;
+		width: 100%;
+	}
+}
+@media (max-width: 600px) {
+	.subpage-intro-col-1of2 {
+		margin-left: 30%;
+	}
+	.section-intro-col-1of2 {
+		margin-left: 30%;
+	}
+	.section-intro-col-2of2 {
+		margin-left: 8%;
+	}
+}
+@media (max-width: 500px) {
+	.subpage-intro-col-1of2 {
+		margin-left: 25%;
+	}
+	.section-intro-col-1of2 {
+		margin-left: 25%;
+	}
+	.section-intro-col-2of2 {
+		margin-left: 6%;
+	}
+}
+@media (max-width: 400px) {
+	.subpage-intro-col-1of2 {
+		margin-left: 18%;
+	}
+	.section-intro-col-1of2 {
+		margin-left: 18%;
+	}
+	.section-intro-col-2of2 {
+		margin-left: 6%;
+	}
+}
+
+
+
+/*Cost Secondary Navigation*/
+@media (max-width: 948px) {
+	.grid-col-1of3 {
+		height: 21em;
+	}
+	.grid-col-2of3 {
+		height: 21em;
+	}
+	.grid-col-3of3 {
+		height: 21em;
+	}
+}
+@media (max-width: 887px) {
+	.grid-col-1of3 {
+		height: 24em;
+	}
+	.grid-col-2of3 {
+		height: 24em;
+	}
+	.grid-col-3of3 {
+		height: 24em;
+	}
+}
+@media (max-width: 700px) {
+	.grid-col-1of3 {
+		height: 18em;
+	}
+	.grid-col-2of3 {
+		height: 18em;
+	}
+	.grid-col-3of3 {
+		height: 18em;
+	}
+}
+@media (max-width: 493px) {
+	.grid-col-2of3 {
+		height: 20em;
+	}
+}
